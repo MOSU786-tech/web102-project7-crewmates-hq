@@ -1,65 +1,75 @@
 import './App.css';
 import React from 'react';
-import { useRoutes } from 'react-router-dom'
-import ReadPosts from './pages/ReadPosts'
-import CreatePost from './pages/CreatePost'
-import EditPost from './pages/EditPost'
-import { Link } from 'react-router-dom'
-
+import { NavLink, useRoutes } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import CrewGalleryPage from './pages/CrewGalleryPage';
+import CreateCrewmatePage from './pages/CreateCrewmatePage';
+import CrewmateDetailPage from './pages/CrewmateDetailPage';
+import EditCrewmatePage from './pages/EditCrewmatePage';
+import NotFoundPage from './pages/NotFoundPage';
 
 const App = () => {
-  
-  const descr = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
-
-  const posts = [
-      {'id':'1', 
-      'title': 'Cartwheel in Chelsea 🤸🏽‍♀️',
-      'author':'Harvey Milian', 
-      'description': descr},
-      {'id':'2', 
-      'title': 'Love Lock in Paris 🔒',
-      'author':'Beauford Delaney', 
-      'description':descr},
-      {'id':'3', 
-      'title': 'Wear Pink on Fridays 🎀',
-      'author':'Onika Tonya', 
-      'description':descr},
-      {'id':'4', 
-      'title': 'Adopt a Dog 🐶',
-      'author':'Denise Michelle', 
-      'description':descr},
-  ]
-
-
-  // Sets up routes
-  let element = useRoutes([
+  const element = useRoutes([
     {
-      path: "/",
-      element:<ReadPosts data={posts}/>
+      path: '/',
+      element: <HomePage />,
     },
     {
-      path:"/edit/:id",
-      element: <EditPost data={posts} />
+      path: '/crew',
+      element: <CrewGalleryPage />,
     },
     {
-      path:"/new",
-      element: <CreatePost />
-    }
+      path: '/create',
+      element: <CreateCrewmatePage />,
+    },
+    {
+      path: '/crewmates/:id',
+      element: <CrewmateDetailPage />,
+    },
+    {
+      path: '/crewmates/:id/edit',
+      element: <EditCrewmatePage />,
+    },
+    {
+      path: '*',
+      element: <NotFoundPage />,
+    },
   ]);
 
-  return ( 
+  const navClassName = ({ isActive }) =>
+    isActive ? 'nav-link nav-link--active' : 'nav-link';
 
-    <div className="App">
+  return (
+    <div className="app-shell">
+      <div className="ambient-orb ambient-orb--one" />
+      <div className="ambient-orb ambient-orb--two" />
+      <header className="topbar">
+        <div className="brand-block">
+          <p className="eyebrow">Week 8 Project</p>
+          <NavLink className="brand-link" to="/">
+            <h1>Crewmates HQ</h1>
+          </NavLink>
+          <p className="brand-copy">
+            Build, track, and tune your own mission-ready crew with Supabase CRUD.
+          </p>
+        </div>
 
-      <div className="header">
-        <h1>👍 Bet 1.0</h1>
-        <Link to="/"><button className="headerBtn"> Explore Challenges 🔍  </button></Link>
-        <Link to="/new"><button className="headerBtn"> Submit Challenge 🏆 </button></Link>
-      </div>
-        {element}
+        <nav className="nav-links" aria-label="Primary navigation">
+          <NavLink className={navClassName} to="/">
+            Home
+          </NavLink>
+          <NavLink className={navClassName} to="/crew">
+            Crew Gallery
+          </NavLink>
+          <NavLink className={navClassName} to="/create">
+            Create Crewmate
+          </NavLink>
+        </nav>
+      </header>
+
+      <main className="page-shell">{element}</main>
     </div>
+  );
+};
 
-  )
-}
-
-export default App
+export default App;
