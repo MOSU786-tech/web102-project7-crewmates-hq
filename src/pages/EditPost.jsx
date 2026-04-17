@@ -1,3 +1,6 @@
+// Mentor map: Legacy edit/delete page for Posts table entries.
+// Why it exists: Preserves earlier lab CRUD update and delete behavior.
+// Used by: Older post challenge flow.
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import './EditPost.css'

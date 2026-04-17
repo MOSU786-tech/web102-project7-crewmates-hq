@@ -1,3 +1,6 @@
+// Mentor map: Legacy summary list for Posts table entries.
+// Why it exists: Preserves earlier lab read/list behavior and card rendering.
+// Used by: Older post challenge flow.
 import { useState, useEffect } from 'react'
 import Card from '../components/Card'
 import { supabase } from '../client'

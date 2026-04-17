@@ -1,3 +1,5 @@
+/* Mentor map: Global app shell and layout styles (topbar, panels, boards, buttons). */
+/* Used by: src/App.jsx and all routed pages through shared class names. */
 .app-shell {
   position: relative;
   min-height: 100vh;

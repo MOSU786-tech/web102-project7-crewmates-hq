@@ -1,3 +1,6 @@
+// Mentor map: Summary card for one crewmate in the gallery list.
+// Why it exists: Encapsulates quick actions (open detail/edit) and key stats display.
+// Used by: CrewGalleryPage list rendering.
 import { Link, useNavigate } from 'react-router-dom';
 import './CrewmateCard.css';
 import { COLOR_SWATCHES } from '../data/crewOptions';

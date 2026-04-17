@@ -1,3 +1,6 @@
+// Mentor map: This is the main app shell and route map.
+// Why it exists: Defines navigation and binds URLs to page components.
+// Used by: src/index.jsx as the root React component.
 import './App.css';
 import React from 'react';
 import { NavLink, useRoutes } from 'react-router-dom';

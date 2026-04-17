@@ -1,3 +1,6 @@
+// Mentor map: Update and delete flow for an existing crewmate.
+// Why it exists: Loads current row, applies edits, and supports removal.
+// Used by: /crewmates/:id/edit route in App router.
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import CrewmateForm from '../components/CrewmateForm';

@@ -1,3 +1,5 @@
+/* Mentor map: Legacy posts grid layout styling. */
+/* Used by: src/pages/ReadPosts.jsx. */
 .ReadPosts {
     display: grid;
     grid-auto-flow: row;

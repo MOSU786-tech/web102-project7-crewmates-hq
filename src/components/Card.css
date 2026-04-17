@@ -1,3 +1,5 @@
+/* Mentor map: Legacy card styling for Posts list cards. */
+/* Used by: src/components/Card.jsx. */
 .Card {
     backdrop-filter: blur(2px);
     border: 1px solid rgba(153, 153, 153, 0.497);

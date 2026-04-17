@@ -1,3 +1,6 @@
+// Mentor map: Converts raw Supabase errors into user-friendly messages.
+// Why it exists: Prevents duplicate error handling logic across pages.
+// Used by: Create, read, detail, and edit crewmate pages.
 export const formatSupabaseError = (error) => {
   if (!error) {
     return 'Something went wrong.';

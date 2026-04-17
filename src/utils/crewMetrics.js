@@ -1,3 +1,6 @@
+// Mentor map: Pure utility functions for date formatting and score calculations.
+// Why it exists: Keeps business logic out of UI components.
+// Used by: CrewGalleryPage, CrewmateCard, CrewmateDetailPage, CrewmateForm.
 export const formatCreatedAt = (value) => {
   if (!value) return 'Unknown';
 

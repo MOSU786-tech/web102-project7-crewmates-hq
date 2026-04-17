@@ -1,3 +1,6 @@
+// Mentor map: Detail page for one crewmate by id.
+// Why it exists: Shows full profile data and provides navigation to edit.
+// Used by: /crewmates/:id route in App router.
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { CREWMATES_TABLE, supabase } from '../client';

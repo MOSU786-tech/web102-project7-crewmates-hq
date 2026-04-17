@@ -1,3 +1,6 @@
+// Mentor map: Landing page explaining project goals and navigation paths.
+// Why it exists: Gives rubric-aligned overview and directs users to key flows.
+// Used by: / route in App router.
 import { Link } from 'react-router-dom';
 
 const HomePage = () => {

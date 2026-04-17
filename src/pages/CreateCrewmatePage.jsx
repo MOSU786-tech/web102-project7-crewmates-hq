@@ -1,3 +1,6 @@
+// Mentor map: Create flow for a new crewmate.
+// Why it exists: Validates input and inserts a new record into Supabase.
+// Used by: /create route in App router.
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CrewmateForm from '../components/CrewmateForm';

@@ -1,3 +1,6 @@
+// Mentor map: Fallback page for unmatched routes.
+// Why it exists: Gives users recovery navigation instead of a blank screen.
+// Used by: wildcard route in App router.
 import { Link } from 'react-router-dom';
 
 const NotFoundPage = () => {

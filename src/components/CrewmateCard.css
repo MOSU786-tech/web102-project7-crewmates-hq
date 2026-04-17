@@ -1,3 +1,5 @@
+/* Mentor map: Visual treatment for crewmate summary cards and state themes. */
+/* Used by: src/components/CrewmateCard.jsx. */
 .crewmate-card {
   padding: 22px;
   border-radius: 26px;

@@ -1,3 +1,5 @@
+/* Mentor map: Global baseline variables and reset styles for the full app. */
+/* Used by: Loaded once in src/index.jsx before the app renders. */
 :root {
   color-scheme: dark;
   --text-main: #f7f2e8;

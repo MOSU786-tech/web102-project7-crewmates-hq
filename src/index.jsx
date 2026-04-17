@@ -1,3 +1,6 @@
+// Mentor map: App bootstrap file.
+// Why it exists: Mounts React into #root and wraps the app with BrowserRouter.
+// Used by: index.html script entry.
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'

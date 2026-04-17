@@ -1,3 +1,6 @@
+// Mentor map: Domain constants and helper defaults for crewmate creation/editing.
+// Why it exists: Keeps form options and category rules in one source of truth.
+// Used by: CrewmateForm, detail pages, and metrics helpers.
 export const CATEGORY_OPTIONS = {
   Navigator: {
     description: 'Charts routes, reads signals, and keeps the crew moving in the right direction.',

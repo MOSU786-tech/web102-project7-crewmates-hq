@@ -1,3 +1,6 @@
+// Mentor map: Linting rules and parser setup for JS/JSX code.
+// Why it exists: Enforces consistent quality checks before submission.
+// Used by: npm run lint.
 import js from '@eslint/js'
 import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'

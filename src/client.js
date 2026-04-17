@@ -1,3 +1,6 @@
+// Mentor map: Supabase client singleton.
+// Why it exists: Centralizes URL/key/env config and exports shared table constants.
+// Used by: All pages/components that read or write Supabase data.
 import { createClient } from '@supabase/supabase-js';
 
 const URL =

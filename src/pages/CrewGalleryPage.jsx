@@ -1,3 +1,6 @@
+// Mentor map: Summary page for all crewmates.
+// Why it exists: Reads newest-first data and displays aggregate crew metrics.
+// Used by: /crew route in App router.
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import CrewmateCard from '../components/CrewmateCard';

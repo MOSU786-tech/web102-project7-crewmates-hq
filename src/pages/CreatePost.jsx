@@ -1,3 +1,6 @@
+// Mentor map: Legacy create page for Posts table.
+// Why it exists: Preserves earlier lab CRUD create behavior.
+// Used by: Older post challenge flow.
 import { useState } from 'react'
 import './CreatePost.css'
 import { supabase } from '../client'

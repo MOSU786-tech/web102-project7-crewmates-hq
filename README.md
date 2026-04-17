@@ -1,3 +1,5 @@
+<!-- Mentor map: Project submission doc with rubric coverage, walkthrough, and setup context. -->
+
 # Web Development Project 7 - Crewmates HQ
 
 Submitted by: **Mohammad Sultan**
@@ -58,6 +60,31 @@ GIF created with ScreenToGif
 ## Notes
 
 Main challenge areas were wiring Supabase correctly for a Vite app (using `VITE_` env variables), setting up row level security policies, and making sure CRUD updates reflected immediately across summary/detail/edit views.
+
+## Mentor Tips (Commented)
+
+```js
+// 20+ year backend mentor tip:
+// Keep schema setup idempotent (CREATE IF NOT EXISTS + policy existence checks)
+// so you can re-run setup safely in new environments.
+
+// Production mindset:
+// Keep client env vars in .env.local and only commit .env.example templates.
+// Never commit service-role keys to frontend repos.
+
+// Data integrity first:
+// Put validation in BOTH places:
+// 1) UI validation for user experience
+// 2) DB constraints/checks for data correctness
+
+// CRUD reliability trick:
+// After write actions (create/update/delete), redirect to a page that re-queries
+// source-of-truth data, instead of trusting stale local state.
+
+// Future scale tip:
+// Add migrations early (Supabase CLI) when projects get larger than one SQL file.
+// It saves pain when you need rollback/history.
+```
 
 ## License
 

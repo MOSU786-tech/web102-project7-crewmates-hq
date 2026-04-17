@@ -1,3 +1,6 @@
+// Mentor map: Shared create/edit form UI for crewmates.
+// Why it exists: Reuses one controlled form for both create and update flows.
+// Used by: CreateCrewmatePage and EditCrewmatePage.
 import { Link } from 'react-router-dom';
 import './CrewmateForm.css';
 import {

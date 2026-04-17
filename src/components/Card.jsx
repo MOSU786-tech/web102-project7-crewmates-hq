@@ -1,3 +1,6 @@
+// Mentor map: Legacy post card for earlier lab routes.
+// Why it exists: Displays one post and supports incrementing bet count.
+// Used by: ReadPosts page.
 import { useState } from 'react'
 import './Card.css'
 import more from './more.png'
