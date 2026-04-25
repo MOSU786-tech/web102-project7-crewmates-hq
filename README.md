@@ -53,7 +53,7 @@ Here's a walkthrough of implemented user stories:
 
 Walkthrough name: **Week 8 Project 7 - Crewmates**
 
-<img src='Week%208=%20Project%207%20-%20Crewmates%20walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='Week%208=%20Project%207%20-%20Crewmates%20walkthrough-revised.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with ScreenToGif
 
